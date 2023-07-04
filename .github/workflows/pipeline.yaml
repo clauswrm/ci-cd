@@ -21,8 +21,8 @@ jobs:
     - name: Install dependencies
       run: npm install
       
-    - name: Sleep
-      run: sleep(10)
+    # - name: Sleep
+    #   run: Sleep(10)
 
     - name: Run tests
       run: echo "Tests running as a weeird demo.."
