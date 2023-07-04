@@ -1,0 +1,14 @@
+name: CI/CD Pipeline2
+
+on:
+    pull_request:
+        types: [opened, reopened]
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Run tests
+              run: echo "Tests running again.."
