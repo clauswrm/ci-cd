@@ -19,8 +19,10 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
-      run: npm install,
+      run: npm install
       
+    - name: Sleep
+      run: sleep(10)
 
     - name: Run tests
       run: echo "Tests running as a weeird demo.."
