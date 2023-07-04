@@ -1,0 +1,17 @@
+# Lag en pipeline (ny yaml fil i .github/workflows-mappen) som kjører på PR
+# Lag en branch, og en PR fra den
+# Se at PR-pipelinen kjører, men ikke master-pipelinen
+
+on:
+   pull_request:
+      types: [opened, reopened]
+
+jobs:
+    something:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Run tests
+              run: echo "Tests running as a demo.."
+
+  
